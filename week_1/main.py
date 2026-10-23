@@ -10,11 +10,12 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model = "llama-3.1-8b-instant",
+    model = "openai/gpt-oss-20b",
     messages= [
         {
             'role' : 'user' ,
-            'content' : 'what is your last knowledge cutoff '
+            'content' : 'explain photosynthesis in 20 words'
+        
         }
     ]
 )
