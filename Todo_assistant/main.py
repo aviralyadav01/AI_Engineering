@@ -26,12 +26,12 @@ def main():
 
     print("-"*50)
     print("TASKBUDDY: Hey their! Whats on your mind today ?")
-    print("             Dump your task here , I will manage them for you")
+    print("           Dump your task here , I will manage them for you")
     print("-"*50)
 
     while True:
         try:
-            user_input = input('\n You: ').strip()
+            user_input = input('\n You: ').strip() # strip will remove the white spaces from back and front of string
             
             if user_input.lower() in ['exit' , 'quit'] :
                 print("\nTaskBuddy : GoodBye! ")
